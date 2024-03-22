@@ -1,0 +1,99 @@
+@import "variables.scss";
+
+h1 {
+  color: black;
+}
+
+html {
+  background-color: white;
+}
+
+$myfont: serif;
+$mycolor: red;
+$myfontsize: 10px;
+$mywidth: 60%;
+
+body {
+  font-size: $myfontsize;
+}
+.variable-scope {
+  $mycolor: blue;
+  color: $mycolor;
+}
+.scope-test {
+  color: $mycolor;
+}
+
+.global {
+  $mycolor: green !global;
+  color: $mycolor;
+}
+.test-global {
+  color: $mycolor;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    color: red;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.import_class {
+  color: $special_color;
+}
+
+@mixin important {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.mixin_prop {
+  @include important;
+}
+
+@mixin borders($color, $width) {
+  border: $width solid $color;
+}
+
+.passing_variable {
+  @include borders(blue, 2px);
+}
+
+@mixin texts($w: 2px, $c: orange) {
+  border: $w solid $c;
+}
+.default_value {
+  @include texts($c: red);
+}
+
+.button_basic {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button_report {
+  @extend .button_basic;
+  background-color: red;
+}
+
+.button_submit {
+  @extend .button_basic;
+  background-color: green;
+  color: white;
+}

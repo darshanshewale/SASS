@@ -1,0 +1,78 @@
+h1 {
+  color: black;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  font-size: 10px;
+}
+
+.variable-scope {
+  color: blue;
+}
+
+.scope-test {
+  color: red;
+}
+
+.global {
+  color: green;
+}
+
+.test-global {
+  color: green;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  color: red;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.import_class {
+  color: red;
+}
+
+.mixin_prop {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.passing_variable {
+  border: 2px solid blue;
+}
+
+.default_value {
+  border: 2px solid red;
+}
+
+.button_basic, .button_submit, .button_report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button_report {
+  background-color: red;
+}
+
+.button_submit {
+  background-color: green;
+  color: white;
+}/*# sourceMappingURL=SCSS.css.map */
